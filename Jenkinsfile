@@ -6,5 +6,10 @@ pipeline{
         git 'https://github.com/Hitais/github-jenkins'
         } 
     }
+      stage('build'){
+          steps{
+              sh "mvn cleanup"
+          }
+      }
     }
 }
