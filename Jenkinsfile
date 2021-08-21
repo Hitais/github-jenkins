@@ -6,8 +6,5 @@ pipeline{
         git 'https://github.com/Hitais/github-jenkins'
         } 
     }
-      stage('maven-package'){
-          sh "mvn packagr"
-      }
     }
 }
