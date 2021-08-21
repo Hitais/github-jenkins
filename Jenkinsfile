@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    enivironment{
+        PATH ="C:\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin:$PATH"
+    }
   stages{
     stage('SCM Checkout'){
         steps{
